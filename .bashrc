@@ -119,3 +119,6 @@ set -o vi
 # Sicco: https://unix.stackexchange.com/questions/73484/how-can-i-set-vi-as-my-default-editor-in-unix
 export VISUAL=vim
 export EDITOR="$VISUAL"
+
+# Sicco: http://askubuntu.com/a/80380
+export PROMPT_COMMAND='history -a'
