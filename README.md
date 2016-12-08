@@ -5,5 +5,6 @@ The following command downloads `.bashrc` to your home directory and appends `.1
 
 The same holds for `.vimrc`, but we also install the [NERD tree](https://github.com/scrooloose/nerdtree) plugin using [apt-vim](https://github.com/egalpin/apt-vim):
 - `curl -sL https://raw.githubusercontent.com/egalpin/apt-vim/master/install.sh | sh`
+- Start a new terminal (e.g., close your SSH connection and start a new one)
 - `apt-vim install -y https://github.com/scrooloose/nerdtree.git`
 - `wget --backups=1 -P ~/ https://raw.githubusercontent.com/siccovansas/configs/master/.vimrc`
