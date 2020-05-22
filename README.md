@@ -3,6 +3,10 @@ Some basic configuration files useful to set up new machines.
 The following command downloads `.bashrc` to your home directory and appends `.1` to the original file (this allows you to do a diff on them which is a good thing to do every now and then to see if the orignal contents of the config files haves changed, e.g., due to a new version of the OS):
 - `wget --backups=1 -P ~/ https://raw.githubusercontent.com/siccovansas/configs/master/.bashrc`
 
+The same holdes for `/.config/terminator/config`:
+- `cd ~/.config/terminator`
+- `wget --backups=1 -P ~/ https://raw.githubusercontent.com/siccovansas/configs/master/.config/terminator/config`
+
 The same holds for `.vimrc`, but we also install the [NERD tree](https://github.com/scrooloose/nerdtree) plugin:
 - `git clone https://github.com/scrooloose/nerdtree.git ~/.vim/pack/vendor/start/nerdtree`
 - `vim -u NONE -c "helptags ~/.vim/pack/vendor/start/nerdtree/doc" -c q`
