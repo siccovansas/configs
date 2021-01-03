@@ -5,7 +5,6 @@ The following command downloads `.bashrc` to your home directory and appends `.1
 
 The same holds for `/.config/terminator/config` (terminator is only needed on machines with a GUI):
 - `sudo apt install terminator`
-- `cd ~/.config/terminator`
 - `wget --backups=1 -P ~/.config/terminator https://raw.githubusercontent.com/siccovansas/configs/master/.config/terminator/config`
 
 The same holds for `.vimrc`, but we also install the [NERD tree](https://github.com/scrooloose/nerdtree) plugin:
