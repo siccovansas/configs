@@ -7,8 +7,9 @@ The same holds for `/.config/terminator/config` (terminator is only needed on ma
 - `sudo apt install terminator`
 - `wget --backups=1 -P ~/.config/terminator https://raw.githubusercontent.com/siccovansas/configs/master/.config/terminator/config`
 
-The same holds for `.vimrc`, but we also install the [NERD tree](https://github.com/scrooloose/nerdtree) and  plugin:
-- `git clone https://github.com/scrooloose/nerdtree.git ~/.vim/pack/bundle/nerdtree/`
+The same holds for `.vimrc`, but we also install [NERD tree](https://github.com/scrooloose/nerdtree) and [vim-svelte-plugin](https://github.com/leafOfTree/vim-svelte-plugin):
+- Install [pathogen](https://github.com/tpope/vim-pathogen)
+- `git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree/`
 - `git clone https://github.com/leafOfTree/vim-svelte-plugin --depth 1 ~/.vim/bundle/vim-svelte-plugin/`
 - `vim -u NONE -c "helptags ~/.vim/bundle/nerdtree/doc" -c q`
 - `wget --backups=1 -P ~/ https://raw.githubusercontent.com/siccovansas/configs/master/.vimrc`
