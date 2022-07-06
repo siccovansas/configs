@@ -3,6 +3,9 @@ Some basic configuration files useful to set up new machines.
 The following command downloads `.bashrc` to your home directory and appends `.1` to the original file (this allows you to do a diff on them which is a good thing to do every now and then to see if the orignal contents of the config files haves changed, e.g., due to a new version of the OS):
 - `wget --backups=1 -P ~/ https://raw.githubusercontent.com/siccovansas/configs/master/.bashrc`
 
+Also retrieve `.bash_aliases`:
+- `wget ~/ https://raw.githubusercontent.com/siccovansas/configs/master/.bash_aliases`
+
 The same holds for `/.config/terminator/config` (terminator is only needed on machines with a GUI):
 - `sudo apt install terminator`
 - `wget --backups=1 -P ~/.config/terminator https://raw.githubusercontent.com/siccovansas/configs/master/.config/terminator/config`
