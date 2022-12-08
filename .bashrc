@@ -125,3 +125,6 @@ export EDITOR="$VISUAL"
 
 # Sicco: http://askubuntu.com/a/80380
 export PROMPT_COMMAND='history -a'
+
+# Sicco: required for autocompletion of op, see https://unix.stackexchange.com/questions/606741/xdg-open-autocomplete-not-working-when-calling-it-with-alias/606807#606807
+complete -o default -o bashdefault op
