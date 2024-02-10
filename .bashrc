@@ -128,3 +128,9 @@ export PROMPT_COMMAND='history -a'
 
 # Sicco: required for autocompletion of op, see https://unix.stackexchange.com/questions/606741/xdg-open-autocomplete-not-working-when-calling-it-with-alias/606807#606807
 complete -o default -o bashdefault op
+
+# Search for text in .docx files, e.g.:
+# $ docx_search 'my example sentence'
+# $ root='<PATH_OF_DIR_TO_SEARCH_IN>' docx_search 'my example sentence'
+# via https://unix.stackexchange.com/a/630451
+docx_search(){ local arg wordfile terms=() root=${root:-/}; for arg; do terms+=(-e "$arg"); done; find 2>/dev/null "${root%/}/" -iname '*.docx' -exec bash -c "$(declare -p terms)"'; for arg; do unzip -p "$arg" 2>/dev/null | grep --quiet --ignore-case --fixed-strings "${terms[@]}" && printf %s\\n "$arg"; done' _ {} +; } 
