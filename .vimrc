@@ -11,6 +11,7 @@ set tabstop=4
 set softtabstop=4
 set mouse=a
 set number
+set shiftwidth=2
 
 map <C-n> :NERDTreeToggle<CR>
 map <C-t> :tabnew<CR>
